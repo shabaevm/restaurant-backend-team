@@ -6,9 +6,9 @@ const {
 
 const router = Router();
 
-router.get('/', productsController.getProducts);
-router.post('/', productsController.create);
-router.delete('/:id', productsController.remove);
-router.patch('/:id', productsController.edit);
+router.post('/', productsController.createProduct);
+router.get('/', productsController.getAllProducts);
+router.delete('/:id', productsController.removeProduct);
+router.patch('/:id', productsController.editProduct);
 
 module.exports = router;
