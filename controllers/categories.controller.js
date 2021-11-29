@@ -1,7 +1,7 @@
 const Category = require('../models/Category.model');
 
 module.exports.categoriesController = {
-  create: async (req, res) => {
+  createCategory: async (req, res) => {
     try {
       const { text } = req.body;
       await Category.create({
@@ -12,7 +12,7 @@ module.exports.categoriesController = {
       res.json(e);
     }
   },
-  edit: async (req, res) => {
+  editCategory: async (req, res) => {
     try {
       const { text } = req.body;
       await Category.findByIdAndUpdate(req.params.id, {
@@ -23,7 +23,7 @@ module.exports.categoriesController = {
       res.json(e);
     }
   },
-  remove: async (req, res) => {
+  removeCategory: async (req, res) => {
     try {
       await Category.findByIdAndRemove(req.params.id);
       res.json('успешно удален');
