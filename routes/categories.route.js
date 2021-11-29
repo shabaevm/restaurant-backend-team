@@ -7,8 +7,8 @@ const {
 const router = Router();
 
 router.get('/', categoriesController.getCategories);
-router.post('/', categoriesController.create);
-router.delete('/:id', categoriesController.remove);
-router.patch('/:id', categoriesController.edit);
+router.post('/', categoriesController.createCategory);
+router.delete('/:id', categoriesController.removeCategory);
+router.patch('/:id', categoriesController.editCategory);
 
 module.exports = router;
