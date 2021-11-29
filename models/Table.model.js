@@ -2,6 +2,15 @@ const mongoose = require('mongoose');
 
 const tableSchema = mongoose.Schema(
   {
+    tableNumber: {
+      type: Number,
+      required: true,
+    },
+
+    tableCapacity: {
+      type: Number,
+      required: true,
+    },
   },
   { timestamps: true }
 );
