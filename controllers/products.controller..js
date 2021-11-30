@@ -6,6 +6,7 @@ module.exports.productsController = {
       await Product.create({
         name: req.body.name,
         price: req.body.price,
+        img: req.body.img,
       });
       res.json('Продукт добавлен');
     } catch (e) {
