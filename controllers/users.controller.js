@@ -1,5 +1,58 @@
-const User = require('../models/User.model')
+const User = require('../models/User.model');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 module.exports.usersController = {
+  getAllUsers: async (req, res) => {
+    try {
+      const users = await User.find();
+      res.json(users);
+    } catch (e) {
+      res.json(e);
+    }
+  },
+  registerUser: async (req, res) => {
+    try {
+      const { login, password } = req.body;
+      const hash = await bcrypt.hash(
+        password,
+        Number(process.env.BCRYPT_ROUNDS)
+      );
 
-}
+      const user = await User.create({ login: login, password: hash });
+
+      res.json(user);
+    } catch (e) {
+      return res.status(400).json({
+        error: 'Ошибка при регистрации' + e.toString(),
+      });
+    }
+  },
+  login: async (req, res) => {
+    try {
+      const { login, password } = req.body;
+      const user = await User.findOne({ login });
+      if (!user) {
+        return res.status(401).json('Неверный логин');
+      }
+      const valid = await bcrypt.compare(password, user.password);
+      if (!valid) {
+        return res.status(401).json('Неверный пароль');
+      }
+
+      const payload = {
+        id: user._id,
+        login: user.login,
+      };
+
+      const token = await jwt.sign(payload, process.env.SECRET_JWT_KEY, {
+        expiresIn: '24h',
+      });
+      res.json({
+        token,
+      });
+    } catch (e) {
+      res.json(e);
+    }
+  },
+};

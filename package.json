@@ -1,7 +1,6 @@
 {
   "name": "authorization-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js"
@@ -44,5 +43,14 @@
     "eslint-plugin-import": "^2.25.3",
     "nodemon": "^2.0.15",
     "prettier": "^2.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliUmarov/restaurant-backend-team.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AliUmarov/restaurant-backend-team/issues"
+  },
+  "homepage": "https://github.com/AliUmarov/restaurant-backend-team#readme",
+  "description": ""
 }
