@@ -14,13 +14,16 @@ module.exports.tablesController = {
   },
 
   createTable: async (req, res) => {
-    const { tableNumber, tableCapacity } = req.body;
+    const { tableNumber, tableCapacity, user, product } = req.body;
 
     try {
       const tables = await Table.create({
         tableNumber,
         tableCapacity,
+        user,
+        product,
       });
+      res.json(tables);
     } catch (e) {
       return res.status(400).json({
         error: e.toString(),
@@ -40,7 +43,7 @@ module.exports.tablesController = {
   },
 
   editTable: async (req, res) => {
-    const { tableNumber, tableCapacity } = req.body;
+    const { tableNumber, tableCapacity, user, product } = req.body;
     const { id } = req.params;
 
     try {
@@ -49,6 +52,8 @@ module.exports.tablesController = {
         {
           tableNumber,
           tableCapacity,
+          user,
+          product,
         },
         { new: true }
       );
