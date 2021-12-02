@@ -64,4 +64,15 @@ module.exports.tablesController = {
       });
     }
   },
+  addUserInTable: async (req, res) => {
+    const { id } = req.params;
+    try {
+      const tableId = await Table.findByIdAndUpdate(id, { user: req.user.id });
+      res.status(200).json(tableId);
+    } catch (e) {
+      return res.status(400).json({
+        error: e.toString(),
+      });
+    }
+  },
 };

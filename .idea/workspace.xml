@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5ff54fa7-488a-4941-8a03-92e3b81a63b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/news.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/news.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tables.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tables.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/tables.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tables.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,8 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\alims\Desktop\restaurant-backend-team\node_modules\prettier" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Sayd-Ali\Desktop\restaurant-backend-team\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,36 +55,15 @@
       <updated>1638190970719</updated>
       <workItem from="1638190971822" duration="8322000" />
       <workItem from="1638359523792" duration="3474000" />
+      <workItem from="1638466255443" duration="6040000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="982" y="271" key="#ESLint" timestamp="1638192049185">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="982" y="271" key="#ESLint/0.0.1536.834@0.0.1536.834" timestamp="1638192049185" />
-    <state width="1481" height="191" key="GridCell.Tab.0.bottom" timestamp="1638191501931">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1481" height="191" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1638191501931" />
-    <state width="1481" height="191" key="GridCell.Tab.0.center" timestamp="1638191501931">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1481" height="191" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1638191501931" />
-    <state width="1481" height="191" key="GridCell.Tab.0.left" timestamp="1638191501931">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1481" height="191" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1638191501931" />
-    <state width="1481" height="191" key="GridCell.Tab.0.right" timestamp="1638191501931">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1481" height="191" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1638191501931" />
-    <state x="725" y="186" key="run.anything.popup" timestamp="1638195291318">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="725" y="186" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1638195291318" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
