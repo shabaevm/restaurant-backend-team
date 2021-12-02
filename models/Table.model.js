@@ -14,10 +14,12 @@ const tableSchema = mongoose.Schema(
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'User',
     },
-    product: {
-      type: mongoose.SchemaTypes.ObjectId,
-      ref: 'Product',
-    },
+    product: [
+      {
+        type: mongoose.SchemaTypes.ObjectId,
+        ref: 'Product',
+      },
+    ],
   },
   { timestamps: true }
 );
