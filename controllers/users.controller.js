@@ -54,6 +54,7 @@ module.exports.usersController = {
       });
       res.json({
         token,
+        userId: user._id
       });
     } catch (e) {
       res.json(e);
